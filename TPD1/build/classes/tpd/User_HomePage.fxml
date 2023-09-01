@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" fx:id="Home_Page" prefHeight="697.0" prefWidth="1062.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tpd.User_HomePageController">
+   <children>
+      <ImageView fitHeight="513.0" fitWidth="1093.0" layoutX="5.0" layoutY="210.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Image/HomePage.png" />
+         </image>
+      </ImageView>
+      <VBox prefHeight="146.0" prefWidth="1080.0">
+         <children>
+            <VBox alignment="CENTER" prefHeight="146.0" prefWidth="1088.0" style="-fx-background-color: #09689e;">
+               <children>
+                  <Text fill="#f5f5f5" strokeType="OUTSIDE" strokeWidth="0.0" text="Home Page" textAlignment="CENTER" wrappingWidth="372.13671875">
+                     <font>
+                        <Font size="64.0" />
+                     </font>
+                  </Text>
+               </children>
+            </VBox>
+         </children>
+      </VBox>
+      <Button layoutX="85.0" layoutY="286.0" mnemonicParsing="false" onAction="#Health_Action" prefHeight="70.0" prefWidth="145.0" style="-fx-background-color: #e0ffff; -fx-background-radius: 100; -fx-border-color: black; -fx-border-width: 2 2 2 2; -fx-border-radius: 100;" text="Health">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Button>
+      <Button layoutX="597.0" layoutY="286.0" mnemonicParsing="false" onAction="#Education_Action" prefHeight="70.0" prefWidth="145.0" style="-fx-background-color: #e0ffff; -fx-background-radius: 100; -fx-border-color: Black; -fx-border-width: 2 2 2 2; -fx-border-radius: 100;" text="Education">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Button>
+      <Button layoutX="339.0" layoutY="286.0" mnemonicParsing="false" onAction="#Shelter_Action" prefHeight="70.0" prefWidth="145.0" style="-fx-background-color: #e0ffff; -fx-background-radius: 100; -fx-border-color: Black; -fx-border-width: 2 2 2 2; -fx-border-radius: 100;" text="Shelter">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Button>
+      <Button layoutX="850.0" layoutY="286.0" mnemonicParsing="false" onAction="#Food_Cloths_Action" prefHeight="70.0" prefWidth="145.0" style="-fx-background-color: #e0ffff; -fx-background-radius: 100; -fx-border-color: black; -fx-border-width: 2 2 2 2; -fx-border-radius: 100;" text="Food &amp; cloths">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Button>
+      <Button layoutX="39.0" layoutY="655.0" mnemonicParsing="false" onAction="#Logout_Action" prefHeight="37.0" prefWidth="93.0" style="-fx-background-color: #09689e; -fx-border-color: Black; -fx-border-width: 2 2 2 2;" text="Log Out" textFill="WHITE">
+         <font>
+            <Font name="Bell MT" size="17.0" />
+         </font>
+      </Button>
+      <HBox layoutX="698.0" layoutY="146.0" prefHeight="64.0" prefWidth="380.0">
+         <children>
+            <Button fx:id="DonateButton" mnemonicParsing="false" onAction="#user_donateAction" prefHeight="66.0" prefWidth="70.0" style="-fx-border-color: black;">
+               <graphic>
+                  <ImageView fitHeight="38.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Image/donate_30px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="NotificationButton" mnemonicParsing="false" onAction="#user_notiaction" prefHeight="65.0" prefWidth="85.0" style="-fx-border-color: black;">
+               <graphic>
+                  <ImageView fitHeight="50.0" fitWidth="55.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Image/notification_30px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="UserBUtton" mnemonicParsing="false" onAction="#user_profile_action" prefHeight="64.0" prefWidth="70.0" style="-fx-border-color: black;">
+               <graphic>
+                  <ImageView fitHeight="48.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Image/user_30px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="About_US_Button1" mnemonicParsing="false" onAction="#user_about_action" prefHeight="68.0" prefWidth="86.0" style="-fx-border-color: black;">
+               <graphic>
+                  <ImageView fitHeight="50.0" fitWidth="55.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Image/about_30px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#user_stats" prefHeight="66.0" prefWidth="70.0" style="-fx-border-color: black;">
+               <graphic>
+                  <ImageView fitHeight="50.0" fitWidth="55.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Image/futures_48px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

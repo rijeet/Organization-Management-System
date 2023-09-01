@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="Add_New_Orphan" prefHeight="465.0" prefWidth="868.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tpd.Add_New_OrphanController">
+   <children>
+      <Label layoutX="67.0" layoutY="30.0" text="First Name :" />
+      <Label layoutX="68.0" layoutY="97.0" prefHeight="17.0" prefWidth="77.0" text="Date of Birth :" />
+      <Label layoutX="60.0" layoutY="158.0" prefHeight="17.0" prefWidth="77.0" text="Blood Group :" />
+      <Label layoutX="92.0" layoutY="224.0" prefHeight="17.0" prefWidth="77.0" text="Gender :" />
+      <Label layoutX="118.0" layoutY="290.0" text="ID :" />
+      <TextField fx:id="FirstName" layoutX="188.0" layoutY="26.0" promptText="First Name" />
+      <TextField fx:id="LastName" layoutX="526.0" layoutY="26.0" promptText="Last Name" />
+      <TextField fx:id="ID" layoutX="188.0" layoutY="286.0" promptText="ID" />
+      <ComboBox fx:id="BloodGroup" layoutX="188.0" layoutY="154.0" prefWidth="150.0" promptText="Blood Group" />
+      <ComboBox fx:id="Gender" layoutX="188.0" layoutY="221.0" prefWidth="150.0" promptText="Gender" />
+      <DatePicker fx:id="DateOfBirth" layoutX="188.0" layoutY="93.0" promptText="Date Of Birth" />
+      <Button layoutX="197.0" layoutY="416.0" mnemonicParsing="false" onAction="#Save_Button_Action" prefHeight="25.0" prefWidth="51.0" style="-fx-background-color: #09689e;" text="Save" textFill="#fffbfb">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Button>
+      <Button layoutX="258.0" layoutY="416.0" mnemonicParsing="false" onAction="#Reset_Button_Action" prefHeight="25.0" prefWidth="51.0" style="-fx-background-color: #09689e;" text="Reset" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Button>
+      <Label layoutX="453.0" layoutY="30.0" text="Last Name :" />
+      <ComboBox fx:id="District" layoutX="188.0" layoutY="339.0" prefWidth="150.0" promptText="District" />
+      <Label layoutX="89.0" layoutY="343.0" prefHeight="17.0" prefWidth="63.0" text="Address :" />
+      <TextField fx:id="Upazila" layoutX="375.0" layoutY="339.0" promptText="Upzila" />
+      <Label fx:id="fnameWarning" layoutX="342.0" layoutY="29.0" prefHeight="17.0" prefWidth="95.0" textFill="RED" />
+      <Label fx:id="lnameWarning" layoutX="686.0" layoutY="29.0" prefHeight="17.0" prefWidth="101.0" textFill="#ff2600" />
+      <Label fx:id="IdWarning" layoutX="362.0" layoutY="289.0" prefHeight="17.0" prefWidth="101.0" textFill="#ff0202" />
+      <Label fx:id="upazilaWarning" layoutX="570.0" layoutY="342.0" prefHeight="17.0" prefWidth="111.0" textFill="#fc0000" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="Student_LIst_ANCHR" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="920.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tpd.Show_ALL_StudentController">
+   <children>
+      <TableView fx:id="Student_Table" layoutX="3.0" prefHeight="450.0" prefWidth="915.0">
+         <columns>
+            <TableColumn fx:id="ID_col" prefWidth="75.0" text="Student_ID" />
+            <TableColumn fx:id="Name_col" prefWidth="131.0" text="Name" />
+            <TableColumn fx:id="Class" prefWidth="75.0" text="Class " />
+            <TableColumn fx:id="Blood_groupCol" prefWidth="85.0" text="Blood Group" />
+            <TableColumn fx:id="DistrictCol" prefWidth="112.0" text="District " />
+            <TableColumn fx:id="UpazilaCol" prefWidth="98.0" text="Upazila" />
+            <TableColumn fx:id="GenderCol" prefWidth="85.0" text="Gender" />
+            <TableColumn fx:id="PhoneNumberCol" prefWidth="132.0" text="Phone Number" />
+            <TableColumn fx:id="DAteOfBirthCol" prefWidth="121.0" text="Date of Birth" />
+         </columns>
+         <padding>
+            <Insets left="1.0" />
+         </padding>
+      </TableView>
+      <Button layoutY="455.0" mnemonicParsing="false" onAction="#Delete_button" prefHeight="31.0" prefWidth="77.0" text="Delete" />
+      <ComboBox fx:id="ColumnType" layoutX="452.0" layoutY="457.0" prefWidth="150.0" promptText="         Select Column" />
+      <TextField fx:id="Value" layoutX="628.0" layoutY="457.0" />
+      <Button fx:id="Search" layoutX="794.0" layoutY="457.0" mnemonicParsing="false" onAction="#Search_Action" text="Search" />
+   </children>
+</AnchorPane>

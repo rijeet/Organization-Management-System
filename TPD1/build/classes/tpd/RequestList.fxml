@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="487.0" prefWidth="868.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tpd.RequestListController">
+   <children>
+      <TableView fx:id="RequestTable" layoutX="-1.0" layoutY="-1.0" prefHeight="434.0" prefWidth="873.0">
+         <columns>
+            <TableColumn fx:id="Namecol" prefWidth="142.0" text="Name" />
+            <TableColumn fx:id="NumberCol" prefWidth="151.0" text="Number " />
+            <TableColumn fx:id="BloodCol" prefWidth="101.0" text="Blood Group " />
+            <TableColumn fx:id="DistrictCol" prefWidth="137.0" text="District" />
+            <TableColumn fx:id="UpazilaCOl" prefWidth="147.0" text="Upazila" />
+            <TableColumn fx:id="OthersInfoCol" prefWidth="241.0" text="Others info" />
+         </columns>
+      </TableView>
+      <TextField fx:id="Value" layoutX="582.0" layoutY="441.0" />
+      <ComboBox fx:id="Type" layoutX="402.0" layoutY="441.0" prefWidth="150.0" />
+      <Button fx:id="Search" layoutX="750.0" layoutY="441.0" mnemonicParsing="false" onAction="#Search_action" text="Search" />
+      <Button layoutX="6.0" layoutY="441.0" mnemonicParsing="false" onAction="#delete" text="Delete" />
+      <Button fx:id="Donate" layoutX="68.0" layoutY="441.0" mnemonicParsing="false" onAction="#blood_DonateAction" text="Donate" />
+   </children>
+</AnchorPane>

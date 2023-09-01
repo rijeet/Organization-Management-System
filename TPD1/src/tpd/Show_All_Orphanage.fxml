@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="465.0" prefWidth="868.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tpd.Show_All_OrphanageController">
+   <children>
+      <TableView fx:id="OrphanageTable" layoutX="6.0" layoutY="-1.0" prefHeight="430.0" prefWidth="859.0">
+        <columns>
+          <TableColumn fx:id="Namcol" prefWidth="164.0" text="Name" />
+          <TableColumn fx:id="Discol" prefWidth="193.0" text="District" />
+            <TableColumn fx:id="Upazilacol" prefWidth="192.0" text="Upazila" />
+            <TableColumn fx:id="CapacityCol" prefWidth="164.0" text="Capacity" />
+            <TableColumn fx:id="VacancyCol" prefWidth="145.0" text="Vacancy" />
+        </columns>
+      </TableView>
+      <Button layoutX="6.0" layoutY="429.0" mnemonicParsing="false" onAction="#delete" prefHeight="25.0" prefWidth="67.0" text="Delete" />
+      <ComboBox fx:id="ColumnType" layoutX="447.0" layoutY="429.0" prefWidth="150.0" promptText="         Select Column" />
+      <TextField fx:id="Value" layoutX="623.0" layoutY="429.0" />
+      <Button fx:id="Search" layoutX="789.0" layoutY="429.0" mnemonicParsing="false" onAction="#Search_Action" text="Search" />
+   </children>
+</AnchorPane>

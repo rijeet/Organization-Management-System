@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/15.0.1" fx:controller="tpd.DonationListController">
+   <children>
+      <TableView fx:id="donationTable" prefHeight="369.0" prefWidth="600.0">
+        <columns>
+          <TableColumn fx:id="username" prefWidth="130.0" text="UserName" />
+          <TableColumn fx:id="bkash" prefWidth="166.0" text="Bkash/Nagad/Rokect No" />
+            <TableColumn fx:id="tans" prefWidth="169.0" text="TransectionID" />
+            <TableColumn fx:id="amnt" prefWidth="134.0" text="Ammount" />
+        </columns>
+      </TableView>
+      <Button layoutX="460.0" layoutY="369.0" mnemonicParsing="false" onAction="#com_action" prefHeight="25.0" prefWidth="119.0" style="-fx-background-color: #09689e;" text="Confirm Donation" textFill="WHITE" />
+   </children>
+</AnchorPane>

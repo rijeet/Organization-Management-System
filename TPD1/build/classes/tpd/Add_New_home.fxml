@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="Add_Orphanage_Ancor" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="465.0" prefWidth="868.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tpd.Add_New_homeController">
+   <children>
+      <Label layoutX="57.0" layoutY="85.0" prefHeight="17.0" prefWidth="51.0" text="Name :" />
+      <Label layoutX="57.0" layoutY="150.0" prefHeight="17.0" prefWidth="51.0" text="Address :" />
+      <Label layoutX="57.0" layoutY="205.0" prefHeight="17.0" prefWidth="51.0" text="Capacity :" />
+      <Label layoutX="57.0" layoutY="261.0" prefHeight="17.0" prefWidth="51.0" text="Vacancy :" />
+      <TextField fx:id="Name" layoutX="131.0" layoutY="81.0" prefHeight="25.0" prefWidth="214.0" />
+      <TextField fx:id="Vacancy" layoutX="131.0" layoutY="257.0" prefHeight="25.0" prefWidth="136.0" />
+      <ComboBox fx:id="District" layoutX="131.0" layoutY="146.0" prefWidth="150.0" />
+      <TextField fx:id="Capacity" layoutX="131.0" layoutY="201.0" prefHeight="25.0" prefWidth="136.0" />
+      <Button layoutX="131.0" layoutY="319.0" mnemonicParsing="false" onAction="#Save" prefHeight="25.0" prefWidth="51.0" style="-fx-background-color: #09689e;" text="Save" textFill="#fffbfb">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Button>
+      <Button layoutX="192.0" layoutY="319.0" mnemonicParsing="false" onAction="#Reset" prefHeight="25.0" prefWidth="51.0" style="-fx-background-color: #09689e;" text="Reset" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Button>
+      <TextField fx:id="Upazila" layoutX="324.0" layoutY="146.0" promptText="Upzila" />
+      <Label fx:id="nameWarning" layoutX="381.0" layoutY="86.0" prefHeight="17.0" prefWidth="127.0" textFill="#ff0202" />
+      <Label fx:id="upazilaWarning" layoutX="508.0" layoutY="151.0" prefHeight="17.0" prefWidth="119.0" textFill="RED" />
+      <Label fx:id="capacityWarning" layoutX="298.0" layoutY="206.0" prefHeight="17.0" prefWidth="127.0" textFill="RED" />
+      <Label fx:id="vacancyWarning" layoutX="298.0" layoutY="262.0" prefHeight="17.0" prefWidth="127.0" textFill="RED" />
+   </children>
+</AnchorPane>

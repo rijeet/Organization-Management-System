@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="485.0" prefWidth="868.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/15.0.1" fx:controller="tpd.ShcolarShip_requestListController">
+   <children>
+      <TableView prefHeight="450.0" prefWidth="868.0">
+         <columns>
+            <TableColumn fx:id="NameCol" prefWidth="154.0" text="Name" />
+            <TableColumn fx:id="ClassCol" minWidth="7.0" prefWidth="70.0" text="Class" />
+            <TableColumn fx:id="Scholarship_Col" prefWidth="154.0" text="Scholarship Type" />
+            <TableColumn fx:id="GPA_Col" prefWidth="132.0" text="Previous Result (GPA)" />
+            <TableColumn fx:id="email_col" prefWidth="180.0" text="Email" />
+            <TableColumn fx:id="number_col" prefWidth="174.0" text="Phone Number" />
+         </columns>
+      </TableView>
+      <Button layoutY="450.0" mnemonicParsing="false" onAction="#Add_button" prefHeight="25.0" prefWidth="72.0" text="Add" />
+      <Button layoutX="97.0" layoutY="450.0" mnemonicParsing="false" onAction="#Remove_button" prefHeight="25.0" prefWidth="72.0" text="Remove" />
+   </children>
+</AnchorPane>

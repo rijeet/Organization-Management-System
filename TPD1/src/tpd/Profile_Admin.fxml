@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tpd.Profile_AdminController">
+   <children>
+      <Circle fill="DODGERBLUE" layoutX="200.0" layoutY="67.0" radius="38.0" stroke="BLACK" strokeType="INSIDE" style="-fx-fill: aquamarine;" />
+      <ImageView fitHeight="67.0" fitWidth="67.0" layoutX="165.0" layoutY="32.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Image/user_100px.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="21.0" layoutY="150.0" text="Name:" />
+      <Label layoutX="15.0" layoutY="230.0" prefHeight="17.0" prefWidth="80.0" text="Date of Birth :" />
+      <Label layoutX="15.0" layoutY="350.0" prefHeight="17.0" prefWidth="87.0" text="Phone Number :" />
+      <Label layoutX="18.0" layoutY="430.0" prefHeight="17.0" prefWidth="87.0" text="Blood Group :" />
+      <Label layoutX="17.0" layoutY="190.0" prefHeight="17.0" prefWidth="60.0" text="Username:" />
+      <Label layoutX="15.0" layoutY="390.0" prefHeight="17.0" prefWidth="95.0" text="Donation Times :" textAlignment="JUSTIFY" />
+      <Label layoutX="15.0" layoutY="270.0" prefHeight="17.0" prefWidth="95.0" text="District :" textAlignment="JUSTIFY" />
+      <Label layoutX="15.0" layoutY="310.0" prefHeight="17.0" prefWidth="95.0" text="Upazila :" textAlignment="JUSTIFY" />
+      <Label fx:id="Name" layoutX="110.0" layoutY="146.0" prefHeight="25.0" prefWidth="149.0">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font></Label>
+      <Label fx:id="username" layoutX="110.0" layoutY="186.0" prefHeight="25.0" prefWidth="149.0" text="a">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font></Label>
+      <Label fx:id="Date_BIrth" layoutX="110.0" layoutY="226.0" prefHeight="25.0" prefWidth="149.0" text="a">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font></Label>
+      <Label fx:id="District" layoutX="110.0" layoutY="266.0" prefHeight="25.0" prefWidth="149.0" text="3">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font></Label>
+      <Label fx:id="upazila" layoutX="110.0" layoutY="306.0" prefHeight="25.0" prefWidth="149.0" text="4">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font></Label>
+      <Label fx:id="Phone_number" layoutX="110.0" layoutY="346.0" prefHeight="25.0" prefWidth="149.0" text="45">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font></Label>
+      <Label fx:id="DonateTimes" layoutX="110.0" layoutY="386.0" prefHeight="25.0" prefWidth="149.0" text="6">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font></Label>
+      <Label fx:id="Blood_Group" layoutX="110.0" layoutY="426.0" prefHeight="25.0" prefWidth="149.0" text="67">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font></Label>
+   </children>
+</AnchorPane>

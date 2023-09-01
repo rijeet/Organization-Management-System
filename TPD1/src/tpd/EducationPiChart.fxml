@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane id="AnchorPane" fx:id="Educationchartpane" prefHeight="700.0" prefWidth="1080.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/15.0.1" fx:controller="tpd.EducationPiChartController">
+   <children>
+      <PieChart fx:id="educationPiChart" layoutX="151.0" layoutY="188.0" prefHeight="400.0" prefWidth="636.0" title="Education Chart" />
+      <VBox alignment="CENTER" prefHeight="145.0" prefWidth="1080.0" style="-fx-background-color: #09689e;">
+         <children>
+            <Text fill="#f8f5f5" strokeType="OUTSIDE" strokeWidth="0.0" text="Education Statistics" textAlignment="CENTER" wrappingWidth="473.43359375">
+               <font>
+                  <Font size="50.0" />
+               </font>
+            </Text>
+         </children>
+      </VBox>
+      <Button layoutX="75.0" layoutY="646.0" mnemonicParsing="false" onAction="#Back_action" style="-fx-background-color: #09689e;" text="Back" textFill="WHITE">
+         <font>
+            <Font name="Baskerville Old Face" size="16.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

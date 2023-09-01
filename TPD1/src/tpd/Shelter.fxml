@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" fx:id="Shelter_Pane" prefHeight="720.0" prefWidth="1080.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tpd.ShelterController">
+   <children>
+      <ImageView fitHeight="463.0" fitWidth="984.0" layoutX="55.0" layoutY="203.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Image/Orphanage.png" />
+         </image>
+      </ImageView>
+      <VBox alignment="CENTER" prefHeight="145.0" prefWidth="1080.0" style="-fx-background-color: #09689e;">
+         <children>
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Shelter" textAlignment="CENTER" wrappingWidth="292.861328125">
+               <font>
+                  <Font size="67.0" />
+               </font>
+            </Text>
+         </children>
+      </VBox>
+      <Button layoutX="59.0" layoutY="669.0" mnemonicParsing="false" onAction="#Back_action" style="-fx-background-color: #09689e;" text="Back" textFill="WHITE">
+         <font>
+            <Font name="Baskerville Old Face" size="16.0" />
+         </font>
+      </Button>
+      <Button layoutX="46.0" layoutY="259.0" mnemonicParsing="false" onAction="#Old_Age_Home" prefHeight="44.0" prefWidth="174.0" style="-fx-background-color: #c20af5; -fx-background-radius: 100; -fx-border-radius: 100; -fx-border-width: 2 2 2 2; -fx-border-color: Black;" text="Old Age Home" textFill="WHITE">
+         <font>
+            <Font name="Bell MT Bold" size="21.0" />
+         </font>
+      </Button>
+      <Button layoutX="46.0" layoutY="203.0" mnemonicParsing="false" onAction="#Orphanage" prefHeight="47.0" prefWidth="174.0" style="-fx-background-color: #c20af5; -fx-background-radius: 100; -fx-border-color: Black; -fx-border-radius: 100; -fx-border-width: 2 2 2 2;" text="Orphanage" textFill="WHITE">
+         <font>
+            <Font name="Arial Bold" size="23.0" />
+         </font>
+      </Button>
+      <Button layoutX="947.0" layoutY="667.0" mnemonicParsing="false" onAction="#Logout_Action" prefHeight="40.0" prefWidth="115.0" style="-fx-background-color: #09689e;" text="Log Out" textFill="WHITE">
+         <font>
+            <Font name="Bell MT" size="17.0" />
+         </font>
+      </Button>
+      <MenuBar blendMode="SRC_ATOP" depthTest="ENABLE" layoutX="10.0" layoutY="155.0" pickOnBounds="false" prefHeight="25.0" prefWidth="1080.0" style="-fx-background-color: #6495ed; -fx-border-color: Black; -fx-text-fill: greenyellow" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="145.0">
+         <menus>
+            <Menu mnemonicParsing="false" onAction="#health_action" style="-fx-background-color: #5f9ea0; -fx-border-color: Black;" text="Health">
+               <items>
+                  <Menu mnemonicParsing="false" onAction="#Blood_bank_action" text="Blood Bank">
+                     <items>
+                        <MenuItem mnemonicParsing="false" onAction="#Donor_list_action" text="Donor List">
+                           <graphic>
+                              <ImageView fitHeight="30.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../Image/list_40px.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </MenuItem>
+                        <MenuItem mnemonicParsing="false" onAction="#request_list_action" text="Request List">
+                           <graphic>
+                              <ImageView fitHeight="30.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../Image/folded_hands_emoji_40px.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </MenuItem>
+                     </items>
+                     <graphic>
+                        <ImageView fitHeight="30.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Image/blood_donation_40px.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Menu>
+                  <MenuItem mnemonicParsing="false" onAction="#Online_consult_action" text="Online Consult">
+                     <graphic>
+                        <ImageView fitHeight="30.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Image/doctor_male_40px.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </MenuItem>
+               </items>
+               <graphic>
+                  <ImageView fitHeight="30.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Image/doctors_bag_40px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Menu>
+            <Menu mnemonicParsing="false" onAction="#shelter_action" style="-fx-background-color: #40e0d0; -fx-border-color: Black;" text="Shelter">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#Orphanage_action" text="Orphanage">
+                     <graphic>
+                        <ImageView fitHeight="30.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Image/child_safe_zone_40px.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </MenuItem>
+                  <MenuItem mnemonicParsing="false" onAction="#Old_Age_home_action" text="Old Age Home">
+                     <graphic>
+                        <ImageView fitHeight="30.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Image/Person%20Old%20Male%20Skin%20Type%201%20and%202_40px.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </MenuItem>
+               </items>
+               <graphic>
+                  <ImageView fitHeight="30.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Image/tent_40px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Menu>
+            <Menu mnemonicParsing="false" onAction="#Education_action" style="-fx-background-color: #cd5c5c; -fx-border-color: Black;" text="Education">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#school_action" text="School">
+                     <graphic>
+                        <ImageView fitHeight="30.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Image/school_40px.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </MenuItem>
+                  <MenuItem mnemonicParsing="false" onAction="#scholarship_action" text="ScholarShip">
+                     <graphic>
+                        <ImageView fitHeight="30.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Image/education_40px.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </MenuItem>
+               </items>
+               <graphic>
+                  <ImageView fitHeight="30.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Image/school_4%20px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Menu>
+            <Menu mnemonicParsing="false" onAction="#Food_cloths_action" style="-fx-background-color: #778899; -fx-border-color: Black;" text="Food &amp; Cloths">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="Food &amp; Cloths">
+                     <graphic>
+                        <ImageView fitHeight="30.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Image/take_away_food_40px.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </MenuItem>
+               </items>
+               <graphic>
+                  <ImageView fitHeight="30.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Image/take_away_food_40px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Menu>
+            <Menu mnemonicParsing="false" style="-fx-background-color: #ee82ee; -fx-border-color: Black;" text="Statistics">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#StatisticsChart_Action" text="Statistics">
+                     <graphic>
+                        <ImageView fitHeight="30.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Image/combo_chart_30px.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </MenuItem>
+               </items>
+               <graphic>
+                  <ImageView fitHeight="30.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Image/combo_chart_30px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Menu>
+            <Menu mnemonicParsing="false" style="-fx-background-color: #cd853f; -fx-border-color: Black;" text="About Us">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#AboutUS_action" text=" About Us">
+                     <graphic>
+                        <ImageView fitHeight="30.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Image/about_40px.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </MenuItem>
+               </items>
+               <graphic>
+                  <ImageView fitHeight="30.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Image/about_40px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Menu>
+            <Menu mnemonicParsing="false" style="-fx-background-color: #cd853f; -fx-border-color: Black;" text="Exit">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#Closed_action" text="Closed">
+                     <graphic>
+                        <ImageView fitHeight="30.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Image/exit_40px.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </MenuItem>
+               </items>
+               <graphic>
+                  <ImageView fitHeight="30.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Image/exit_40px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Menu>
+         </menus>
+         <effect>
+            <Blend />
+         </effect>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </MenuBar>
+   </children>
+</AnchorPane>

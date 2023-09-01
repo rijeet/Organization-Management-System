@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="450.0" prefWidth="650.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tpd.DonationpaneController">
+   <children>
+      <Label layoutX="153.0" layoutY="174.0" prefHeight="17.0" prefWidth="68.0" text="User Name:" />
+      <TextField fx:id="username" layoutX="238.0" layoutY="170.0" />
+      <Label layoutX="153.0" layoutY="233.0" prefHeight="17.0" prefWidth="68.0" text="Bkash No:" />
+      <TextField fx:id="bkashNo" layoutX="238.0" layoutY="229.0" />
+      <Label layoutX="149.0" layoutY="336.0" prefHeight="17.0" prefWidth="84.0" text="Transaction ID :" />
+      <TextField fx:id="Transection" layoutX="238.0" layoutY="332.0" />
+      <Button fx:id="sendAction" layoutX="278.0" layoutY="410.0" mnemonicParsing="false" onAction="#sendbuttion" prefHeight="25.0" prefWidth="68.0" style="-fx-background-color: #09689e;" text="Send" textFill="WHITE" />
+      <Label layoutX="153.0" layoutY="290.0" prefHeight="17.0" prefWidth="68.0" text="Ammount :" />
+      <TextField fx:id="ammountNo" layoutX="238.0" layoutY="286.0" />
+      <VBox alignment="CENTER" prefHeight="100.0" prefWidth="650.0" style="-fx-background-color: #09689e;">
+         <children>
+            <Label text="Donation" textFill="WHITE">
+               <font>
+                  <Font name="Arial Narrow Bold Italic" size="39.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+      <TextField fx:id="month" layoutX="238.0" layoutY="368.0" />
+      <Label layoutX="166.0" layoutY="372.0" prefHeight="17.0" prefWidth="43.0" text="Month :" />
+      <Label layoutX="150.0" layoutY="134.0" prefHeight="19.0" prefWidth="84.0" text="01954360859" textFill="RED">
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="25.0" fitWidth="50.0" layoutX="167.0" layoutY="113.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Image/Untitled-2.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="38.0" fitWidth="57.0" layoutX="278.0" layoutY="108.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Image/Nagad-Logo.wine.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="261.0" layoutY="135.0" prefHeight="19.0" prefWidth="84.0" text="01954360859" textFill="RED">
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="23.0" fitWidth="68.0" layoutX="391.0" layoutY="114.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Image/Rd894a28ecbf733e21300de8feca76c18.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="374.0" layoutY="135.0" prefHeight="19.0" prefWidth="84.0" text="01954360859" textFill="RED">
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

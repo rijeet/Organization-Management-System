@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="New_person" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="465.0" prefWidth="868.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tpd.Add_New_PersonController">
+   <children>
+      <Label layoutX="68.0" layoutY="68.0" text="First Name :" />
+      <Label layoutX="460.0" layoutY="67.0" text="Last Name :" />
+      <Label layoutX="102.0" layoutY="135.0" prefHeight="17.0" prefWidth="51.0" text="Age :" />
+      <Label layoutX="58.0" layoutY="196.0" prefHeight="17.0" prefWidth="77.0" text="Blood Group :" />
+      <Label layoutX="85.0" layoutY="263.0" prefHeight="17.0" prefWidth="51.0" text="Gender :" />
+      <TextField fx:id="FirstName" layoutX="178.0" layoutY="64.0" />
+      <TextField fx:id="LastName" layoutX="528.0" layoutY="63.0" />
+      <ComboBox fx:id="BloodGroup" layoutX="178.0" layoutY="192.0" prefWidth="150.0" />
+      <ComboBox fx:id="Gender" layoutX="178.0" layoutY="259.0" prefWidth="150.0" />
+      <Button layoutX="178.0" layoutY="426.0" mnemonicParsing="false" onAction="#Save" prefHeight="25.0" prefWidth="51.0" style="-fx-background-color: #09689e;" text="Save" textFill="#fffbfb">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Button>
+      <Button layoutX="262.0" layoutY="426.0" mnemonicParsing="false" onAction="#Reset" prefHeight="25.0" prefWidth="51.0" style="-fx-background-color: #09689e;" text="Reset" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Button>
+      <Label layoutX="73.0" layoutY="320.0" text="Phone No :" />
+      <TextField fx:id="PhoneNumber" layoutX="178.0" layoutY="316.0" />
+      <TextField fx:id="Age" layoutX="178.0" layoutY="131.0" />
+      <ComboBox fx:id="District" layoutX="178.0" layoutY="363.0" prefWidth="150.0" promptText="District" />
+      <TextField fx:id="ID" layoutX="528.0" layoutY="192.0" />
+      <Label layoutX="491.0" layoutY="195.0" prefHeight="17.0" prefWidth="30.0" text="ID :" />
+      <Label layoutX="71.0" layoutY="367.0" prefHeight="17.0" prefWidth="77.0" text="Address :" />
+      <TextField fx:id="Upazila" layoutX="386.0" layoutY="363.0" promptText="Upzila" />
+      <Label fx:id="fnameWarning" layoutX="332.0" layoutY="68.0" prefHeight="17.0" prefWidth="108.0" textFill="RED" />
+      <Label fx:id="lnameWarning" layoutX="703.0" layoutY="67.0" prefHeight="17.0" prefWidth="101.0" textFill="RED" />
+      <Label fx:id="ageWarning" layoutX="358.0" layoutY="134.0" prefHeight="17.0" prefWidth="126.0" textFill="RED" />
+      <Label fx:id="idWarning" layoutX="703.0" layoutY="195.0" prefHeight="17.0" prefWidth="101.0" textFill="RED" />
+      <Label fx:id="phoneWarning" layoutX="358.0" layoutY="319.0" prefHeight="17.0" prefWidth="133.0" textFill="RED" />
+      <Label fx:id="upazilaWarning" layoutX="578.0" layoutY="366.0" prefHeight="17.0" prefWidth="133.0" textFill="RED" />
+   </children>
+</AnchorPane>

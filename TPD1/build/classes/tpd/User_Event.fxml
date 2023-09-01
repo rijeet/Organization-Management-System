@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+
+<TableView fx:id="EventTable" prefHeight="120.0" prefWidth="954.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tpd.User_EventController">
+   <columns>
+      <TableColumn fx:id="SL_Col" prefWidth="75.0" text="SL NO." />
+      <TableColumn fx:id="Name_col" prefWidth="96.0" text="Event Name" />
+      <TableColumn fx:id="Date_Col" prefWidth="97.0" text="Event Date" />
+      <TableColumn fx:id="Time_Col" prefWidth="73.0" text="Time" />
+      <TableColumn fx:id="Place_Col" prefWidth="108.0" text="Event Place" />
+      <TableColumn fx:id="Description_Col" prefWidth="431.0" text="Event Description" />
+   </columns>
+</TableView>
